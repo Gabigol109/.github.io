@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="real.webp"></link>
+	<title>Contrato do Sócio</title>
+	<style type="text/css">
+	
+
+	body {
+	  background-attachment: fixed;
+	  
+	}
+	  ul {
+	 float: right;
+     list-style-type: none;
+ 	 margin: 0;
+ 	 padding: 0;
+ 	 overflow: hidden;
+ 	 color: black;
+ 	 background-color: light-green;
+	}
+
+	li {
+ 	 border-right:1px solid #bbb;
+ 	 float: left;
+ 	 opacity: 0.7;
+	}
+
+	li:last-child {
+  	border-right: none;
+	}
+
+    li a {
+ 	 display: block;
+  	text-align: center;
+  	padding: 30px 16px;
+  	text-decoration: none;
+  	color: white;
+	}
+
+	li a:hover{
+  	background-color: lightgray;
+	}
+
+    main {
+      text-align: center;
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px black;
+      opacity: 0.5;
+    }
+    .small {
+    	line-height: 0.6;
+    }
+    .cd {
+    	text-align: left;
+    }
+
+    .gs {
+    	 position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+    h1 {
+    	color: orange;
+    }
+    .p {
+    	float: right;
+    }
+
+</style>
+</head>
+<body>
+
+<h1 class="small">Real Madrid Club de Fútbol</h1>
+	<ul class="small">
+	    <li><a href="inicio.html">Inicio</a></li>
+	    <li><a href="index.html">História</a></li>
+
+	</ul>
+	<main>	 
+		<h1>Contrato do Sócio</h1>
+	   <form class="cd">
+	    	Nome: <br><input type="text" name="Nome Completo" placeholder="Nome Completo"><br><br>
+	    	Data de Nascimento: <br><input type="date" name="data" placeholder="Digite a data em que nasceu"><br><br>
+	    	Sexo:<br> <input type="radio" name="sexo" value="M">M <input type="radio" name="sexo" value="F">F<br><br>
+	    	Valor que irá contribuir com o clube:<br> <input type="number" name="valor" placeholder="Digite o valor:"><br><br>
+	    	Email:<br><input type="Email" name="email" placeholder="Digite o seu email"><br><br>
+	    	<input type="submit" name="Enviar"> 
+
+
+	    </form>
+	    <audio id="meuSom">
+    <source src="cr6.mp3" type="audio/mpeg">
+    
+</audio>
+
+<!-- Botão para tocar o som -->
+<button class="p" onclick="document.getElementById('meuSom').play();">Tocar Som</button>
+<button class="p" onclick="document.getElementById('meuSom').pause();">Parar Som</button>
+	    
+
+</main>
+<video autoplay muted loop class="gs">
+	    		<source src="ga.mp4" type="video/mp4">
+</video>
+
+	
+</body>
+</html>
